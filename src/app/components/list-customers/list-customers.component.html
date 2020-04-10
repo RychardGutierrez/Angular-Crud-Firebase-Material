@@ -1,16 +1,19 @@
-<div class="ex-button-row ">
-    <mat-form-field>
-        <div>
-            <mat-label>Filter</mat-label>
-            <input matInput (keyup)="applyFilter($event)" placeholder="Search customer">
-        </div>
-    </mat-form-field>
+<div class="container">
+    <div class="ex-button-row ">
+        <mat-form-field>
+            <div>
+                <mat-label>Filter</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Search customer">
+            </div>
+        </mat-form-field>
 
-    <button mat-raised-button padding={10} margin={5} color="accent" (click)="onNew()">
-        New
-        <mat-icon> save </mat-icon>
-    </button>
+        <button mat-raised-button padding={10} margin={5} color="accent" (click)="onNew()">
+            New
+            <mat-icon> save </mat-icon>
+        </button>
+    </div>
 </div>
+
 <div class="container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
         <!-- Name Column -->
